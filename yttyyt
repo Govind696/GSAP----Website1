@@ -1,0 +1,27 @@
+let tl = gsap.timeline({
+    ScrollTrigger:{
+        trigger:".page1 h1",
+        scroller:"#main",
+        markers:true,
+        start:"top 27%",
+        end:"top 0",
+        scrub:2
+    }
+})
+tl.to(".page1 h1",{
+    x:-180,
+    
+})
+
+
+// page1video.addEventListener('mouseenter', (elem) => {
+//     curser.innerText = 'Sound on'; // Change cursor to pointer on hover
+// curser.style.width = "100px";
+// curser.style.height = "20px";
+//   });
+
+//   page1video.addEventListener('mouseleave', () => {
+//     curser.innerText = ''; // Change cursor back to default when leaving the image
+//     curser.style.width = "17px";
+// curser.style.height = "17px";
+//   });
